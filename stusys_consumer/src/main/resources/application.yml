@@ -1,0 +1,8 @@
+server:
+  port: 8081
+dubbo:
+  application:
+    name: stusys_consumer
+  registry:
+    address: zookeeper://192.168.198.180:2181
+

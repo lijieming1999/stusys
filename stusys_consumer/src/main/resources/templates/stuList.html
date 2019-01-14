@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    id:<span th:text="${stu.id}"></span>
+    name:<span th:text="${stu.name}"></span>
+    age:<span th:text="${stu.age}"></span>
+
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>age</th>
+            <th>claName</th>
+        </tr>
+        <tr th:each="stu:${stuList}">
+            <td th:text="${stu.id}">11</td>
+            <td th:text="${stu.name}">zs</td>
+            <td th:text="${stu.age}">15</td>
+            <td th:text="${stu.claName}">三年二班</td>
+        </tr>
+    </table>
+</body>
+</html>
